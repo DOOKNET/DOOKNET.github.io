@@ -17,9 +17,17 @@ search:
   format: html
   limit: 10000
 
+#设置RSS
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 5
+  hub: 
+  content: 'true'
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://DOOKNET.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
