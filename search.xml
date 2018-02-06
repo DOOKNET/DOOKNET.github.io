@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F02%2F06%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[关于博客]]></title>
+    <url>%2F2018%2F02%2F06%2F%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[我的博客之路 种一棵树最好的时间是什么时候？ 十年之前。 简单来说，我的博客之路主要分为以下几个阶段： 第一阶段：从刚接触博客到真正开始写博客经历了很长时间。我的第一篇博客是在博客园写的，在决定写博客之前收集了很多信息，包括在知乎，Google等上查如何写博客？为什么要写博客？在哪里写博客？之类的问题。犹豫了很久，才决定在博客园上写。 第二阶段：在博客园上写了两篇不怎么样的博客后就很长一段时间都没在写博客，一方面是学业较忙，另一方面是确实没什么产出，因为一开始给自己博客的定位是技术类博客，所以不是干货也不愿意放博客上。后来一次偶然的机会，发现周围很多人都在CSDN，而那段时间正好用上了MarkDown，所以决定尝试用CSDN的MarkDown编辑器写博客，然后发现界面居然还挺好看的，体验真心不错，至少比博客园的编辑体验好多了（说实话，编辑体验确实很能影响写博客的心情），于是乎决定在CSDN常驻下来，曾一度以为这里是我的博客归属地了。 第三阶段：随着时间的推移，慢慢的开始胡思乱想了，万一博客园和CSDN倒闭了怎么办，之前的文章不就都没了吗;把自己的心得、成果都放在别人家的网站上总感觉不太放心，总感觉不是属于自己的东西（原谅我奇怪的占有欲233）。于是萌生了利用GitHub搭建博客的想法，但又突然想到万一GitHub倒闭了或者被墙了怎么办？毕竟GitHub被墙比CSDN倒闭的可能性大多了。。。于是一个偶然的机会看到了开头的那句话。可以说，这句话是我开始动手建站的导火索。是啊，纠结是最弱智的行为。在经历了两个晚上的折腾之后终于搭建完了自己的博客。可以说是满满的成就感啊！ 目前我的写博客流程基本是这样的： 在本地用MarkDown写完博客后推到个人博客，作为博客的出处。 将本地博客导入到CSDN进行发布。 将本地文件内容复制到博客园进行发布。 当然，平台什么的都是其次，主要是有产出，而这个博客站点的搭建也是为了激励我坚持写博客。 但行好事，莫问前程！]]></content>
+      <categories>
+        <category>个人</category>
+      </categories>
+      <tags>
+        <tag>总结</tag>
+      </tags>
   </entry>
 </search>
