@@ -17,14 +17,6 @@ search:
   format: html
   limit: 10000
 
-#Add 2018/2/5
-#server:  
-#  port: 5000 # or anohter number
-#  log: false
-#  ip: 0.0.0.0
-#  compress: false
-#  header: true
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
