@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hexo</title>
+    <link>https://DOOKNET.github.io/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>但行好事，莫问前程</description>
+    <pubDate>Tue, 06 Feb 2018 14:33:28 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>关于博客</title>
+      <link>https://DOOKNET.github.io/2018/02/06/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/</link>
+      <guid>https://DOOKNET.github.io/2018/02/06/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/</guid>
+      <pubDate>Tue, 06 Feb 2018 11:54:12 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h2 id=&quot;我的博客之路&quot;&gt;&lt;a href=&quot;#我的博客之路&quot; class=&quot;headerlink&quot; title=&quot;我的博客之路&quot;&gt;&lt;/a&gt;我的博客之路&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;种一棵树最好的时间是什么时候？  十年之前。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h2 id="我的博客之路"><a href="#我的博客之路" class="headerlink" title="我的博客之路"></a>我的博客之路</h2><blockquote><p>种一棵树最好的时间是什么时候？  十年之前。</p></blockquote><p>简单来说，我的博客之路主要分为以下几个阶段：</p><ul><li><p>第一阶段：<br>从刚接触博客到真正开始写博客经历了很长时间。我的第一篇博客是在博客园写的，在决定写博客之前收集了很多信息，包括在知乎，Google等上查如何写博客？为什么要写博客？在哪里写博客？之类的问题。犹豫了很久，才决定在博客园上写。</p></li><li><p>第二阶段：<br>在博客园上写了两篇不怎么样的博客后就很长一段时间都没在写博客，一方面是学业较忙，另一方面是确实没什么产出，因为一开始给自己博客的定位是技术类博客，所以不是干货也不愿意放博客上。后来一次偶然的机会，发现周围很多人都在CSDN，而那段时间正好用上了MarkDown，所以决定尝试用CSDN的MarkDown编辑器写博客，然后发现界面居然还挺好看的，体验真心不错，至少比博客园的编辑体验好多了（说实话，编辑体验确实很能影响写博客的心情），于是乎决定在CSDN常驻下来，曾一度以为这里是我的博客归属地了。</p></li><li><p>第三阶段：<br>随着时间的推移，慢慢的开始胡思乱想了，万一博客园和CSDN倒闭了怎么办，之前的文章不就都没了吗;把自己的心得、成果都放在别人家的网站上总感觉不太放心，总感觉不是属于自己的东西（原谅我奇怪的占有欲233）。于是萌生了利用GitHub搭建博客的想法，但又突然想到万一GitHub倒闭了或者被墙了怎么办？毕竟GitHub被墙比CSDN倒闭的可能性大多了。。。于是一个偶然的机会看到了开头的那句话。可以说，这句话是我开始动手建站的导火索。是啊，纠结是最弱智的行为。在经历了两个晚上的折腾之后终于搭建完了自己的博客。可以说是满满的成就感啊！</p></li></ul><p>目前我的写博客流程基本是这样的：</p><ul><li>在本地用MarkDown写完博客后推到<a href="https://DOOKNET.github.io">个人博客</a>，作为博客的出处。</li><li>将本地博客导入到<a href="http://blog.csdn.net/HOOKNET" target="_blank" rel="noopener">CSDN</a>进行发布。</li><li>将本地文件内容复制到<a href="http://www.cnblogs.com/HOOKNET" target="_blank" rel="noopener">博客园</a>进行发布。</li></ul><p>当然，平台什么的都是其次，主要是有产出，而这个博客站点的搭建也是为了激励我坚持写博客。</p><p>但行好事，莫问前程！</p>]]></content:encoded>
+      
+      <comments>https://DOOKNET.github.io/2018/02/06/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>

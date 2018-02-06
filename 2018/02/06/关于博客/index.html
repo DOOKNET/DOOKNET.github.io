@@ -74,6 +74,8 @@
 
 
 
+  <link rel="alternate" href="/rss2.xml" title="Hexo" type="application/atom+xml" />
+
 
 
 
@@ -83,7 +85,7 @@
 <meta name="keywords" content="总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于博客">
-<meta property="og:url" content="http://yoursite.com/2018/02/06/关于博客/index.html">
+<meta property="og:url" content="https://DOOKNET.github.io/2018/02/06/关于博客/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="我的博客之路 种一棵树最好的时间是什么时候？  十年之前。  简单来说，我的博客之路主要分为以下几个阶段：  第一阶段：从刚接触博客到真正开始写博客经历了很长时间。我的第一篇博客是在博客园写的，在决定写博客之前收集了很多信息，包括在知乎，Google等上查如何写博客？为什么要写博客？在哪里写博客？之类的问题。犹豫了很久，才决定在博客园上写。  第二阶段：在博客园上写了两篇不怎么样的博客后就很长一段">
 <meta property="og:locale" content="zh-Hans">
@@ -120,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/06/关于博客/"/>
+  <link rel="canonical" href="https://DOOKNET.github.io/2018/02/06/关于博客/"/>
 
 
 
@@ -307,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/06/关于博客/">
+    <link itemprop="mainEntityOfPage" href="https://DOOKNET.github.io/2018/02/06/关于博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DOOKNET">
@@ -378,8 +380,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/02/06/关于博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/02/06/关于博客/" itemprop="commentCount"></span>
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/06/关于博客/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -432,7 +433,7 @@
 </ul>
 <p>目前我的写博客流程基本是这样的：</p>
 <ul>
-<li>在本地用MarkDown写完博客后推到<a href="https://DOOKNET.github.io" target="_blank" rel="noopener">个人博客</a>，作为博客的出处。</li>
+<li>在本地用MarkDown写完博客后推到<a href="https://DOOKNET.github.io">个人博客</a>，作为博客的出处。</li>
 <li>将本地博客导入到<a href="http://blog.csdn.net/HOOKNET" target="_blank" rel="noopener">CSDN</a>进行发布。</li>
 <li>将本地文件内容复制到<a href="http://www.cnblogs.com/HOOKNET" target="_blank" rel="noopener">博客园</a>进行发布。</li>
 </ul>
@@ -520,15 +521,14 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
     </div>
 
   
+
 
 
 
@@ -611,6 +611,13 @@
           </nav>
 
           
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
           
             <div class="links-of-author motion-element">
@@ -646,24 +653,6 @@
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Link
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://macshuo.com/" title="MacTalk" target="_blank">MacTalk</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://example.com/" title="Title" target="_blank">Title</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           
@@ -851,26 +840,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://DOOKNET.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/02/06/关于博客/';
-          this.page.identifier = '2018/02/06/关于博客/';
-          this.page.title = '关于博客';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://DOOKNET.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -886,8 +855,58 @@
 
 
 
+  
 
 
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'DOOKNET',
+            repo: 'DOOKNET.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '81b841054228ad67743275561c8795f628e94ab9',
+            
+                client_id: '37a968dc7c82ced94b9c'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
+    
 
 
 

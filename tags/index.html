@@ -74,6 +74,8 @@
 
 
 
+  <link rel="alternate" href="/rss2.xml" title="Hexo" type="application/atom+xml" />
+
 
 
 
@@ -82,11 +84,11 @@
 <meta name="description" content="但行好事，莫问前程">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:url" content="https://DOOKNET.github.io/tags/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="但行好事，莫问前程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-06T12:29:22.574Z">
+<meta property="og:updated_time" content="2018-02-06T16:04:30.878Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签">
 <meta name="twitter:description" content="但行好事，莫问前程">
@@ -119,7 +121,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="https://DOOKNET.github.io/tags/"/>
 
 
 
@@ -337,6 +339,19 @@
 
           
 
+  
+    <div class="comments" id="comments">
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
+    </div>
+
+  
+
+
+
+
         </div>
         
           
@@ -407,6 +422,13 @@
           </nav>
 
           
+            <div class="feed-link motion-element">
+              <a href="/rss2.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
           
             <div class="links-of-author motion-element">
@@ -442,24 +464,6 @@
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Link
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://macshuo.com/" title="MacTalk" target="_blank">MacTalk</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://example.com/" title="Title" target="_blank">Title</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           
@@ -631,14 +635,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://DOOKNET.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -654,8 +650,58 @@
 
 
 
+  
 
 
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'DOOKNET',
+            repo: 'DOOKNET.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '81b841054228ad67743275561c8795f628e94ab9',
+            
+                client_id: '37a968dc7c82ced94b9c'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
+      
+      </script>
+    
 
 
 
