@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="FPGA,AM,调制解调," />
+  <meta name="keywords" content="教程,搭建博客," />
 
 
 
@@ -81,30 +81,32 @@
 
 
 
-<meta name="description" content="一、说明： 功能：AM调制 平台：Vivado 2016.4 和 Matlab R2017a  二、原理：1. AM调制原理 AM已调信号的时域表达式：  已调信号的频域表达式：本质上AM调制就是频谱的搬移。  AM调制的系统框图将调制信号加上一个直流分量，保证信号的最小值大于零，然后再和载波相乘，得到已调信号。   三、AM调制的FPGA实现1.产生调制信号和载波信号调用ROM IP核在FPGA">
-<meta name="keywords" content="FPGA,AM,调制解调">
+<meta name="description" content="前言：关于本博客的搭建，参考了很多网上的教程，虽然说网上教程很多，但总觉得很分散，每个教程的着重点都不一样，因此我顺便整理了下在自己搭建博客过程中参考过的教程。  搭建步骤：一、软件安装：不详细讲，具体教程网上很多，nodejs和git的安装基本都默认下一步。 二、搭建本地博客1. 安装hexo打开cmd命令（WIN+R），执行命令 1npm install hexo-cli -g  等待自动安装">
+<meta name="keywords" content="教程,搭建博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AM调制的FPGA实现">
-<meta property="og:url" content="https://DOOKNET.github.io/2018/02/09/AM调制的FPGA实现/index.html">
+<meta property="og:title" content="Github搭建博客教程">
+<meta property="og:url" content="https://DOOKNET.github.io/2018/02/05/HEXO/Github搭建博客教程/index.html">
 <meta property="og:site_name" content="DOOKNET.Blog">
-<meta property="og:description" content="一、说明： 功能：AM调制 平台：Vivado 2016.4 和 Matlab R2017a  二、原理：1. AM调制原理 AM已调信号的时域表达式：  已调信号的频域表达式：本质上AM调制就是频谱的搬移。  AM调制的系统框图将调制信号加上一个直流分量，保证信号的最小值大于零，然后再和载波相乘，得到已调信号。   三、AM调制的FPGA实现1.产生调制信号和载波信号调用ROM IP核在FPGA">
+<meta property="og:description" content="前言：关于本博客的搭建，参考了很多网上的教程，虽然说网上教程很多，但总觉得很分散，每个教程的着重点都不一样，因此我顺便整理了下在自己搭建博客过程中参考过的教程。  搭建步骤：一、软件安装：不详细讲，具体教程网上很多，nodejs和git的安装基本都默认下一步。 二、搭建本地博客1. 安装hexo打开cmd命令（WIN+R），执行命令 1npm install hexo-cli -g  等待自动安装">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35344947-5391bf16-0169-11e8-97c9-d8eedace8214.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35344965-5af1843a-0169-11e8-8404-a27227df6875.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35344973-5f419bc4-0169-11e8-9397-0813d525fd8b.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35349621-6e1186ac-0176-11e8-98e5-a1475ff60d50.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35349629-739fdf24-0176-11e8-800e-aea80c15a60d.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35349637-77da1834-0176-11e8-8b3a-e1ce6b8441a5.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35349644-7c3bb8ec-0176-11e8-9acc-f9033ad57396.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35351304-722b11ea-017b-11e8-8fbe-fa55d56b9e0c.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35351309-76a5fee2-017b-11e8-876f-0c74fc15beab.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35352112-d7de9514-017d-11e8-8bfc-bb974be7840c.png">
-<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/35352115-da652410-017d-11e8-8d84-881a1c2af51f.png">
-<meta property="og:updated_time" content="2018-02-09T11:30:37.306Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348926-8ea5e94c-14b5-11e8-91e1-93371a45b716.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348927-92344536-14b5-11e8-9316-7132577650da.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348929-94b68e18-14b5-11e8-92ab-7d21ebc32054.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348939-1aa58ccc-14b6-11e8-9e0b-a413dc25a1ff.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348947-42fd22de-14b6-11e8-8ce8-141602c0c205.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348976-ffb403f2-14b6-11e8-9877-90747a73ead0.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348979-1387fb4a-14b7-11e8-95a0-831f6522f5ec.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348980-1efd7b58-14b7-11e8-957b-44503dc1882d.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36348993-6d522d58-14b7-11e8-8c44-911212d7f582.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36349001-a3dfcd76-14b7-11e8-9ee4-6489aa568883.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36349056-df41cf26-14b8-11e8-84cf-0d25f7c9b957.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36349061-fc36ae94-14b8-11e8-8181-7d0774ed1508.png">
+<meta property="og:image" content="https://user-images.githubusercontent.com/29295862/36349062-0cca4d38-14b9-11e8-8f3c-4e955e47bfc6.png">
+<meta property="og:updated_time" content="2018-03-01T08:49:58.594Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AM调制的FPGA实现">
-<meta name="twitter:description" content="一、说明： 功能：AM调制 平台：Vivado 2016.4 和 Matlab R2017a  二、原理：1. AM调制原理 AM已调信号的时域表达式：  已调信号的频域表达式：本质上AM调制就是频谱的搬移。  AM调制的系统框图将调制信号加上一个直流分量，保证信号的最小值大于零，然后再和载波相乘，得到已调信号。   三、AM调制的FPGA实现1.产生调制信号和载波信号调用ROM IP核在FPGA">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/29295862/35344947-5391bf16-0169-11e8-97c9-d8eedace8214.png">
+<meta name="twitter:title" content="Github搭建博客教程">
+<meta name="twitter:description" content="前言：关于本博客的搭建，参考了很多网上的教程，虽然说网上教程很多，但总觉得很分散，每个教程的着重点都不一样，因此我顺便整理了下在自己搭建博客过程中参考过的教程。  搭建步骤：一、软件安装：不详细讲，具体教程网上很多，nodejs和git的安装基本都默认下一步。 二、搭建本地博客1. 安装hexo打开cmd命令（WIN+R），执行命令 1npm install hexo-cli -g  等待自动安装">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/29295862/36348926-8ea5e94c-14b5-11e8-91e1-93371a45b716.png">
 
 
 
@@ -134,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="https://DOOKNET.github.io/2018/02/09/AM调制的FPGA实现/"/>
+  <link rel="canonical" href="https://DOOKNET.github.io/2018/02/05/HEXO/Github搭建博客教程/"/>
 
 
 
 
 
-  <title>AM调制的FPGA实现 | DOOKNET.Blog</title>
+  <title>Github搭建博客教程 | DOOKNET.Blog</title>
   
 
 
@@ -321,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://DOOKNET.github.io/2018/02/09/AM调制的FPGA实现/">
+    <link itemprop="mainEntityOfPage" href="https://DOOKNET.github.io/2018/02/05/HEXO/Github搭建博客教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DOOKNET">
@@ -338,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">AM调制的FPGA实现</h1>
+          <h1 class="post-title" itemprop="name headline">Github搭建博客教程</h1>
         
 
         <div class="post-meta">
@@ -350,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-09T19:05:44+08:00">
-                2018-02-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-05T13:55:07+08:00">
+                2018-02-05
               </time>
             
 
@@ -373,8 +375,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/FPGA——调制解调/" itemprop="url" rel="index">
-                    <span itemprop="name">FPGA——调制解调</span>
+                  <a href="/categories/HEXO/" itemprop="url" rel="index">
+                    <span itemprop="name">HEXO</span>
                   </a>
                 </span>
 
@@ -391,8 +393,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/09/AM调制的FPGA实现/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/09/AM调制的FPGA实现/" itemprop="commentsCount"></span>
+                <a href="/2018/02/05/HEXO/Github搭建博客教程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/05/HEXO/Github搭建博客教程/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -400,7 +402,7 @@
 
           
           
-             <span id="/2018/02/09/AM调制的FPGA实现/" class="leancloud_visitors" data-flag-title="AM调制的FPGA实现">
+             <span id="/2018/02/05/HEXO/Github搭建博客教程/" class="leancloud_visitors" data-flag-title="Github搭建博客教程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -431,50 +433,82 @@
       
 
       
-        <h2 id="一、说明："><a href="#一、说明：" class="headerlink" title="一、说明："></a>一、说明：</h2><ol>
-<li>功能：AM调制</li>
-<li>平台：Vivado 2016.4 和 Matlab R2017a</li>
-</ol>
-<h2 id="二、原理："><a href="#二、原理：" class="headerlink" title="二、原理："></a>二、原理：</h2><h3 id="1-AM调制原理"><a href="#1-AM调制原理" class="headerlink" title="1. AM调制原理"></a>1. AM调制原理</h3><ul>
-<li><p><strong>AM已调信号的时域表达式：</strong><br><img src="https://user-images.githubusercontent.com/29295862/35344947-5391bf16-0169-11e8-97c9-d8eedace8214.png" alt=" "></p>
-</li>
-<li><p><strong>已调信号的频域表达式：</strong><br><img src="https://user-images.githubusercontent.com/29295862/35344965-5af1843a-0169-11e8-8404-a27227df6875.png" alt=" "><br>本质上AM调制就是频谱的搬移。</p>
-</li>
-<li><p><strong>AM调制的系统框图</strong><br><img src="https://user-images.githubusercontent.com/29295862/35344973-5f419bc4-0169-11e8-9397-0813d525fd8b.png" alt=" "><br>将调制信号加上一个直流分量，保证信号的最小值大于零，然后再和载波相乘，得到已调信号。</p>
-</li>
-</ul>
-<h2 id="三、AM调制的FPGA实现"><a href="#三、AM调制的FPGA实现" class="headerlink" title="三、AM调制的FPGA实现"></a>三、AM调制的FPGA实现</h2><h3 id="1-产生调制信号和载波信号"><a href="#1-产生调制信号和载波信号" class="headerlink" title="1.产生调制信号和载波信号"></a>1.产生调制信号和载波信号</h3><p>调用ROM IP核在FPGA内部产生两路余弦信号，其中一路信号用于模拟外部输入的调制信号，另一路用作载波信号。<br>在配置ROM IP核之前，需要用Matlab生.coe文件，存放在ROM核里。</p>
+        <h1 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h1><p>关于本博客的搭建，参考了很多网上的教程，虽然说网上教程很多，但总觉得很分散，每个教程的着重点都不一样，因此我顺便整理了下在自己搭建博客过程中参考过的教程。</p>
+<hr>
+<h1 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h1><h2 id="一、软件安装："><a href="#一、软件安装：" class="headerlink" title="一、软件安装："></a>一、软件安装：</h2><p>不详细讲，具体教程网上很多，nodejs和git的安装基本都默认下一步。</p>
+<h2 id="二、搭建本地博客"><a href="#二、搭建本地博客" class="headerlink" title="二、搭建本地博客"></a>二、搭建本地博客</h2><h3 id="1-安装hexo"><a href="#1-安装hexo" class="headerlink" title="1. 安装hexo"></a>1. 安装hexo</h3><p>打开cmd命令（WIN+R），执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348926-8ea5e94c-14b5-11e8-91e1-93371a45b716.png" alt=" "><br><img src="https://user-images.githubusercontent.com/29295862/36348927-92344536-14b5-11e8-9316-7132577650da.png" alt="npm install hexo-cli -g"></p>
+<p>等待自动安装完成后，输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348929-94b68e18-14b5-11e8-92ab-7d21ebc32054.png" alt="hexo -v"></p>
+<p>可以检查是否安装成功，如果没问题可以继续。</p>
+<h3 id="2-初始化hexo"><a href="#2-初始化hexo" class="headerlink" title="2. 初始化hexo"></a>2. 初始化hexo</h3><p>新建一个文件夹<strong>Hexo</strong>，用于存放博客，配置等。右键</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Git Bash Here</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348939-1aa58ccc-14b6-11e8-9e0b-a413dc25a1ff.png" alt="git bash here"></p>
+<p>直接定位到当前文件夹,然后执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;hexo init</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348947-42fd22de-14b6-11e8-8ce8-141602c0c205.png" alt="hexo_init"></p>
+<p>初始化配置文件,可能时间比较长，耐心等待。完成后，输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348976-ffb403f2-14b6-11e8-9877-90747a73ead0.png" alt="npm_install"></p>
+<p>配置node。接下来输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348979-1387fb4a-14b7-11e8-95a0-831f6522f5ec.png" alt="hexo_g"></p>
+<p>加载hexo基础html、css、js等文件。<br>在这完成后等于已经在本地创建了一个网页，想查看的话，输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348980-1efd7b58-14b7-11e8-957b-44503dc1882d.png" alt="hexo_s"></p>
+<p>这相当于开启了一个本地的服务器，会提示你拷贝url到浏览器。（Ctrl + C 是停止的意思，不是复制！）</p>
+<p><strong>这里注意：不要Ctrl+C！不要Ctrl+C！不要Ctrl+C！</strong></p>
+<p>把网址输入到浏览器就能访问本地网页了。</p>
+<p>一定要先浏览网页再执行Ctrl+C结束，顺序颠倒会导致访问不了网页。</p>
+<p>但如果提示错误<strong>解决办法如下：</strong><a href="http://laker.me/blog/2017/03/16/17_0316_hexo_sever/" target="_blank" rel="noopener">Hexo server not working；Hexo 无法访问页面</a></p>
+<hr>
+<p>打开文件<strong>Hexo/_config.yml</strong>,添加如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 5000 # or anohter number</span><br><span class="line">  log: false</span><br><span class="line">  ip: 0.0.0.0</span><br><span class="line">  compress: false</span><br><span class="line">  header: true</span><br></pre></td></tr></table></figure>
+<p>如图所示</p>
+<p><img src="https://user-images.githubusercontent.com/29295862/36348993-6d522d58-14b7-11e8-8c44-911212d7f582.png" alt=" "></p>
+<p>重新输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>端口号会变成5000。同样，先输入网址。</p>
+<p><img src="https://user-images.githubusercontent.com/29295862/36349001-a3dfcd76-14b7-11e8-9ee4-6489aa568883.png" alt="localhost:5000"></p>
+<hr>
+<p>至此，本地博客框架搭建完成</p>
+<h3 id="3-DIY博客主题"><a href="#3-DIY博客主题" class="headerlink" title="3. DIY博客主题"></a>3. DIY博客主题</h3><p>之前的博客界面主题是默认的，当然是要换成别的啦。说是DIY，其实就是搬运别人的主题。下面按照我的主题举例介绍如何搬运。</p>
+<p>首先输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/yelog/hexo-theme-3-hexo.git themes/3-hexo</span><br></pre></td></tr></table></figure>
+<p>把对应的主题clone到本地<strong>Hexo/theme/3-hexo</strong>下</p>
+<p><img src="https://user-images.githubusercontent.com/29295862/36349056-df41cf26-14b8-11e8-84cf-0d25f7c9b957.png" alt="git clone"></p>
+<p>这时在theme文件夹下面多了一个<strong>3-hexo</strong>的文件夹，这就是下载下来的主题。</p>
+<p>修改根目录下的 <strong>_config.yml</strong>文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: 3-hexo</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36349061-fc36ae94-14b8-11e8-8181-7d0774ed1508.png" alt="3-hexo"></p>
+<p>再次运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/29295862/36349062-0cca4d38-14b9-11e8-8f3c-4e955e47bfc6.png" alt="hexo s"></p>
+<p>到这里为止，主题算是搬运完了，接下来就是细节上的修改，将别人的主页变成自己的，具体修改方法参考原作者在GitHub上的说明。</p>
+<h2 id="三、部署到GitHub"><a href="#三、部署到GitHub" class="headerlink" title="三、部署到GitHub"></a>三、部署到GitHub</h2><h3 id="1-配置远程仓库地址"><a href="#1-配置远程仓库地址" class="headerlink" title="1.配置远程仓库地址"></a>1.配置远程仓库地址</h3><p>在根目录下的 <strong>_config.yml</strong>文件中修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/用户名/用户名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h3 id="2-其他"><a href="#2-其他" class="headerlink" title="2. 其他"></a>2. 其他</h3><p>具体可以参考其他参考教程。</p>
+<p>关于新建分支用于存放源文件的操作其他参考教程上也有。</p>
+<h2 id="四、常用指令"><a href="#四、常用指令" class="headerlink" title="四、常用指令"></a>四、常用指令</h2><p>博客搭建好之后，后期写博客会有一些常用指令。</p>
 <ul>
-<li><strong>Matlab生成.coe文件：</strong></li>
+<li>新建文章：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">%---------------------------------%</span><br><span class="line">width=8;       %设置rom的位宽</span><br><span class="line">depth=1024;     %设置rom的深度</span><br><span class="line">%---------------------------------%</span><br><span class="line"></span><br><span class="line">x=linspace(0,2*pi,depth);       %在一个周期内产生depth个采样点</span><br><span class="line">y_cos=cos(x);                   %生成余弦函数</span><br><span class="line">%y_cos=sin(x);                   %生成正弦函数</span><br><span class="line">%y_cos=round(y_cos*(2^(width-1)-1))+2^(width-1)-1;       %将数据转化成整数,生成无符号数</span><br><span class="line">y_cos=round(y_cos*(2^(width-1)-1));       %将数据转化成整数,生成有符号数</span><br><span class="line"></span><br><span class="line">plot(x,y_cos);                  %绘图</span><br><span class="line"></span><br><span class="line">fid = fopen(&apos;E:\Workspace\DDS\Design\IP_Core\cos.coe&apos;,&apos;wt&apos;);</span><br><span class="line"></span><br><span class="line">fprintf(fid,&apos;memory_initialization_radix = 10;\nmemory_initialization_vector = &apos;);</span><br><span class="line">for i = 1 : depth</span><br><span class="line">    if mod(i-1,8) == 0 </span><br><span class="line">        fprintf(fid,&apos;\n&apos;);</span><br><span class="line">    end</span><br><span class="line">    fprintf(fid,&apos;%6d,&apos;,y_cos(i));</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">fclose(fid);                    %关闭文件</span><br></pre></td></tr></table></figure>
-<p>生成.coe文件后就可以进行IP核的配置了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;文件名字&quot;</span><br></pre></td></tr></table></figure>
 <ul>
-<li><strong>ROM核具体配置：</strong><br><img src="https://user-images.githubusercontent.com/29295862/35349621-6e1186ac-0176-11e8-98e5-a1475ff60d50.png" alt=" "><br><img src="https://user-images.githubusercontent.com/29295862/35349629-739fdf24-0176-11e8-800e-aea80c15a60d.png" alt=" "><br><img src="https://user-images.githubusercontent.com/29295862/35349637-77da1834-0176-11e8-8b3a-e1ce6b8441a5.png" alt=" "><br><img src="https://user-images.githubusercontent.com/29295862/35349644-7c3bb8ec-0176-11e8-9acc-f9033ad57396.png" alt=" "></li>
+<li>本地写完后，将本地源文件备份到github：</li>
 </ul>
-<p>配置完IP核后，编写控制模块，产生两路信号。其中，调制信号上叠加的直流分量的大小为调制信号的峰值，这样将得到调制度为100%的已调信号。如果要得到不同的调制度，则需要叠加不同大小的直流分量，同时需要注意定义的数据位宽，防止数据溢出。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;备注&quot;</span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
 <ul>
-<li><strong>产生载波和带有直流分量的调制信号：</strong></li>
+<li>将文件转换为网页，部署到博客：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">module cos_make(</span><br><span class="line">	input	clk,</span><br><span class="line">	input	rst_n,</span><br><span class="line">	output	reg	[7:0]	cos_s,</span><br><span class="line">	output	reg	signed	[7:0]	cos_c</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">//------------------------------------//</span><br><span class="line">parameter freq_s = 32&apos;d429497;			//调制信号频率10k</span><br><span class="line">parameter freq_c = 32&apos;d42949673;		//载波频率1M</span><br><span class="line">parameter cnt_width = 8&apos;d32;</span><br><span class="line">//------------------------------------//</span><br><span class="line"></span><br><span class="line">//------------------------------------//</span><br><span class="line">reg 	[cnt_width-1:0]	cnt_s = 0;</span><br><span class="line">reg		[cnt_width-1:0]	cnt_c = 0;</span><br><span class="line">wire 	[9:0]	addr_s;</span><br><span class="line">wire	[9:0]	addr_c;</span><br><span class="line">always @(posedge clk or negedge rst_n) begin</span><br><span class="line">	if(!rst_n)	begin</span><br><span class="line">		cnt_s &lt;= 0;</span><br><span class="line">		cnt_c &lt;= 0;</span><br><span class="line">	end</span><br><span class="line">	else	begin</span><br><span class="line">		cnt_s &lt;= cnt_s + freq_s;</span><br><span class="line">		cnt_c &lt;= cnt_c + freq_c;</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">assign	addr_s = cnt_s[cnt_width-1:cnt_width-10];</span><br><span class="line">assign	addr_c = cnt_c[cnt_width-1:cnt_width-10];</span><br><span class="line">//------------------------------------//</span><br><span class="line"></span><br><span class="line">//------------调用ROM核----------------//</span><br><span class="line">wire 	signed	[7:0]	cos_s_r;</span><br><span class="line">wire 	signed	[7:0]	cos_c_r;</span><br><span class="line"></span><br><span class="line">ROM			ROM_inst(</span><br><span class="line">	.clka	(clk),</span><br><span class="line">	.addra	(addr_s),</span><br><span class="line">	.douta	(cos_s_r),</span><br><span class="line">	.clkb	(clk),</span><br><span class="line">	.addrb	(addr_c),</span><br><span class="line">	.doutb	(cos_c_r)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">always @(posedge clk or negedge rst_n) begin</span><br><span class="line">	if(!rst_n)	begin</span><br><span class="line">		cos_s &lt;= 0;</span><br><span class="line">		cos_c &lt;= 0;</span><br><span class="line">	end</span><br><span class="line">	else	begin</span><br><span class="line">		cos_s &lt;= cos_s_r + 8 &apos;d128;		//加上大小为峰值的直流分量</span><br><span class="line">		cos_c &lt;= cos_c_r;</span><br><span class="line">	end</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
-<h3 id="2-生成AM调制信号"><a href="#2-生成AM调制信号" class="headerlink" title="2.生成AM调制信号"></a>2.生成AM调制信号</h3><p>得到两路信号后就可以用乘法器将两路信号相乘，得到已调信号。</p>
-<ul>
-<li><p><strong>乘法器具体配置：</strong><br><img src="https://user-images.githubusercontent.com/29295862/35351304-722b11ea-017b-11e8-8fbe-fa55d56b9e0c.png" alt=" "><br><img src="https://user-images.githubusercontent.com/29295862/35351309-76a5fee2-017b-11e8-876f-0c74fc15beab.png" alt=" "></p>
-</li>
-<li><p><strong>AM调制的顶层模块：</strong></p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">module modulate(</span><br><span class="line">	input		clk,</span><br><span class="line">	input		rst_n,</span><br><span class="line">	output	signed	[15:0]	AM_mod</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">wire 	[7:0]	cos_s;</span><br><span class="line">wire	signed	[7:0]	cos_c;</span><br><span class="line"></span><br><span class="line">//------------调用出波模块------------//</span><br><span class="line">cos_make		cos_make_inst0(</span><br><span class="line">	.clk			(clk),</span><br><span class="line">	.rst_n		(rst_n),</span><br><span class="line">	.cos_s		(cos_s),</span><br><span class="line">	.cos_c		(cos_c)</span><br><span class="line">);</span><br><span class="line">//-----------------------------------//</span><br><span class="line"></span><br><span class="line">//------------调用乘法器--------------//</span><br><span class="line">MULT		MULT_inst1(		</span><br><span class="line">  .CLK	(clk),</span><br><span class="line">  .A		(cos_s),</span><br><span class="line">  .B		(cos_c),</span><br><span class="line">  .P		(AM_mod)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
-<h3 id="3-仿真调制结果"><a href="#3-仿真调制结果" class="headerlink" title="3.仿真调制结果"></a>3.仿真调制结果</h3><p>以上AM调制过程基本完成，但是正确与否还需要通过仿真来确定，接下来编写仿真用的测试模块。</p>
-<ul>
-<li><strong>TestBeach的编写：</strong></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">`timescale 1ns/1ps</span><br><span class="line"></span><br><span class="line">module tb_AM();</span><br><span class="line"></span><br><span class="line">//---------接口设置----------//</span><br><span class="line">reg 	sclk;</span><br><span class="line">reg		rst_n;</span><br><span class="line">wire 	signed	[15:0]	AM_mod;</span><br><span class="line">//--------------------------//</span><br><span class="line">initial		sclk = 1;</span><br><span class="line">always	#5	sclk = ~sclk;		//100M时钟</span><br><span class="line"></span><br><span class="line">initial	begin</span><br><span class="line">	rst_n = 0;</span><br><span class="line">	#500</span><br><span class="line">	rst_n = 1;</span><br><span class="line">end</span><br><span class="line">//--------------------------//</span><br><span class="line">modulate		modulate_inst0(</span><br><span class="line">	.clk		(sclk),</span><br><span class="line">	.rst_n		(rst_n),</span><br><span class="line">	.AM_mod		(AM_mod)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">endmodule</span><br></pre></td></tr></table></figure>
-<p>在Vivado中将各个文件添加进工程后，运行仿真。</p>
-<ul>
-<li><strong>仿真结果如下：</strong><br><img src="https://user-images.githubusercontent.com/29295862/35352112-d7de9514-017d-11e8-8bfc-bb974be7840c.png" alt=" "><br><img src="https://user-images.githubusercontent.com/29295862/35352115-da652410-017d-11e8-8d84-881a1c2af51f.png" alt=" "></li>
-</ul>
-<p>已调信号能明显看到包络，并且包络的频率同调制信号一致，表明AM调制正确。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<hr>
+<p>一些参考网站：</p>
+<p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next主题</a><br>配合<a href="https://www.jianshu.com/p/cc08e3e509e0" target="_blank" rel="noopener">简书</a>\<br>也可以看<a href="http://yelog.org/2017/02/24/hexo-top-sort/" target="_blank" rel="noopener">Hexo置顶及排序问题</a><br>等主要参考如何设置主题</p>
+<p>主要看<a href="http://blog.csdn.net/wapchief/article/details/54602515" target="_blank" rel="noopener">使用hexo+github免费搭建个人博客网站超详细教程</a>另外<br><a href="https://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">GitHub Pages + Hexo搭建博客</a>\<br>以及<br><a href="https://haoshuai6.github.io/2016-10-28-hexo-github.html" target="_blank" rel="noopener">Hexo+Github搭建个人博客两个分支方便维护</a>等主要参考如何部署和维护</p>
+<p>其他有关修改主题内容的教程：<br><a href="https://meesong.github.io/StaticBlog/2017/NexT+Gitment/" target="_blank" rel="noopener">为 hexo NexT 添加 Gitment 评论插件</a><br>和<a href="https://icessun.github.io/Hexo-Next-%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0gitment%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD.html" target="_blank" rel="noopener">Hexo Next 主题博客添加gitment评论功能</a></p>
 
       
     </div>
@@ -521,11 +555,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/FPGA/" rel="tag"># FPGA</a>
+            <a href="/tags/教程/" rel="tag"># 教程</a>
           
-            <a href="/tags/AM/" rel="tag"># AM</a>
-          
-            <a href="/tags/调制解调/" rel="tag"># 调制解调</a>
+            <a href="/tags/搭建博客/" rel="tag"># 搭建博客</a>
           
         </div>
       
@@ -538,18 +570,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/06/关于博客/" rel="next" title="关于博客">
-                <i class="fa fa-chevron-left"></i> 关于博客
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/09/AM解调的FPGA实现/" rel="prev" title="AM解调的FPGA实现">
-                AM解调的FPGA实现 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/06/个人/关于博客/" rel="prev" title="关于博客">
+                关于博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -730,7 +758,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、说明："><span class="nav-number">1.</span> <span class="nav-text">一、说明：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、原理："><span class="nav-number">2.</span> <span class="nav-text">二、原理：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-AM调制原理"><span class="nav-number">2.1.</span> <span class="nav-text">1. AM调制原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、AM调制的FPGA实现"><span class="nav-number">3.</span> <span class="nav-text">三、AM调制的FPGA实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-产生调制信号和载波信号"><span class="nav-number">3.1.</span> <span class="nav-text">1.产生调制信号和载波信号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-生成AM调制信号"><span class="nav-number">3.2.</span> <span class="nav-text">2.生成AM调制信号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-仿真调制结果"><span class="nav-number">3.3.</span> <span class="nav-text">3.仿真调制结果</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建步骤："><span class="nav-number">2.</span> <span class="nav-text">搭建步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、软件安装："><span class="nav-number">2.1.</span> <span class="nav-text">一、软件安装：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、搭建本地博客"><span class="nav-number">2.2.</span> <span class="nav-text">二、搭建本地博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装hexo"><span class="nav-number">2.2.1.</span> <span class="nav-text">1. 安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-初始化hexo"><span class="nav-number">2.2.2.</span> <span class="nav-text">2. 初始化hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-DIY博客主题"><span class="nav-number">2.2.3.</span> <span class="nav-text">3. DIY博客主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、部署到GitHub"><span class="nav-number">2.3.</span> <span class="nav-text">三、部署到GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-配置远程仓库地址"><span class="nav-number">2.3.1.</span> <span class="nav-text">1.配置远程仓库地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-其他"><span class="nav-number">2.3.2.</span> <span class="nav-text">2. 其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、常用指令"><span class="nav-number">2.4.</span> <span class="nav-text">四、常用指令</span></a></li></ol></li></ol></div>
             
 
           </div>
