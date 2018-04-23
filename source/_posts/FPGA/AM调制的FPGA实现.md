@@ -2,7 +2,7 @@
 title: AM调制的FPGA实现
 date: 2018-02-09 19:05:44
 categories:
-- FPGA——调制解调
+- FPGA
 tags:
 - FPGA
 - AM
