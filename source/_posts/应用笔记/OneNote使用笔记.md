@@ -2,7 +2,7 @@
 title: OneNote使用笔记
 date: 2018-04-23 16:51:43
 categories:
-- 笔记
+- 应用笔记
 tags:
 - OneNote
 ---
